@@ -1,0 +1,62 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="teste" content="#" />
+    <meta name="utfarm" content="#" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Teste</title>
+
+    <style type="text/css">
+#crossfade > img { 
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 16s linear infinite 0s; 
+}
+
+#crossfade > img:nth-child(2)  {
+    animation-delay: 4s; 
+}
+#crossfade > img:nth-child(3) {
+    animation-delay: 8s; 
+}
+#crossfade > img:nth-child(4) {
+    animation-delay: 12s; 
+}
+#crossfade > img:nth-child(5) {
+    animation-delay: 16s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+    </style>
+</head>
+
+<body>
+    <div id="crossfade">
+        <img src="c1semfundo.png" alt="Image 1">
+        <img src="c2semfundo.png" alt="Image 2">
+        <img src="c3semfundo.png" alt="Image 3">
+      </div>
+    </div>
+
+
+</body>
+
+</html>
